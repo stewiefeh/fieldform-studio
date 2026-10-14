@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Fieldform</title>
+  <meta name="description" content="Contact Fieldform Studio. Tell us about your site, your budget range, and your timeline, and we will reply within two working days.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Fieldform">
+  <meta property="og:description" content="Tell us about your project. We reply within two working days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..650;1,9..144,300..650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C1915'/%3E%3Cpath d='M8 24V13l8-5 8 5v11' fill='none' stroke='%23F4F1E9' stroke-width='2.4'/%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("fieldform-theme");
+        var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+
+  <header class="site-head">
+    <div class="wrap head-in">
+      <a class="brand" href="index.html" aria-label="Fieldform Studio, home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2 14V5l6-3 6 3v9"/><path d="M6 14V9h4v5"/></svg>
+        </span>
+        Fieldform
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="journal.html">Journal</a></li>
+        </ul>
+      </nav>
+      <div class="head-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Switch theme">
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5 5l1.7 1.7M17.3 17.3L19 19M19 5l-1.7 1.7M6.7 17.3L5 19"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <a class="btn btn-line head-cta" href="contact.html" aria-current="page">Start a project</a>
+        <button class="icon-btn burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Contact</span>
+        <h1 data-reveal style="--d:120ms">Tell us what you are planning.</h1>
+        <p class="lede" data-reveal style="--d:240ms">
+          A first enquiry costs you five minutes and nothing else. We read
+          every one, and we reply within two working days, even when the
+          answer is that we are not the right studio.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="contact-grid">
+          <!-- ========================================================
+               FORM
+               ======================================================== -->
+          <form class="contact-form" data-validate data-subject="Project enquiry from the website" data-reveal>
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-name">Your name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jordan Meyer" required minlength="2">
+                <span class="error-msg">A name helps us reply properly.</span>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <span class="error-msg">That email does not look complete.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-type">Project type</label>
+                <select id="cf-type" name="type" required>
+                  <option value="" selected disabled>Choose one</option>
+                  <option>A house</option>
+                  <option>An interior only</option>
+                  <option>A cultural or civic building</option>
+                  <option>A workplace</option>
+                  <option>A feasibility study</option>
+                  <option>Something else</option>
+                </select>
+                <span class="error-msg">Pick the closest fit.</span>
+              </div>
+              <div class="field">
+                <label for="cf-budget">Budget range</label>
+                <select id="cf-budget" name="budget" required>
+                  <option value="" selected disabled>Choose one</option>
+                  <option>Under $500k</option>
+                  <option>$500k to $1.5M</option>
+                  <option>$1.5M to $5M</option>
+                  <option>Above $5M</option>
+                  <option>Not sure yet</option>
+                </select>
+                <span class="error-msg">Rough is fine. "Not sure" is fine too.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">The project, in your words</label>
+              <textarea id="cf-message" name="message" rows="6" placeholder="The site, the people, the timeline, and anything you already know you want" required minlength="20"></textarea>
+              <span class="error-msg">A sentence or two is enough, twenty characters minimum.</span>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:var(--sp-3); flex-wrap:wrap">
+              <button class="btn btn-solid" type="submit">Send the enquiry <span class="arrow">&#8594;</span></button>
+              <p class="form-note">Opens your mail app with the message ready. We never add you to a mailing list from an enquiry.</p>
+            </div>
+          </form>
+
+          <!-- ========================================================
+               SIDE PANEL
+               ======================================================== -->
+          <aside class="contact-side">
+            <div class="info-card" data-reveal="right">
+              <h3>The studio</h3>
+              <ul>
+                <li>118 NW Flanders St, Suite 402</li>
+                <li>Portland, OR 97209</li>
+                <li>Mon to Fri, 9 to 5:30 PT</li>
+                <li><a href="mailto:studio@fieldform.studio">studio@fieldform.studio</a></li>
+                <li><a href="tel:+15035550142">+1 (503) 555-0142</a></li>
+              </ul>
+            </div>
+            <div class="info-card" data-reveal="right" style="--d:120ms">
+              <h3>Before you write</h3>
+              <ul>
+                <li>A photo of the site or building helps</li>
+                <li>A rough budget saves a round of emails</li>
+                <li>Your timeline matters more than your start date</li>
+                <li>Press enquiries: the same address, with "press" in the subject</li>
+              </ul>
+            </div>
+            <div class="info-card" data-reveal="right" style="--d:240ms">
+              <h3>Elsewhere</h3>
+              <ul>
+                <li><a href="https://www.instagram.com" rel="noopener">Instagram, project photography weekly</a></li>
+                <li><a href="https://www.linkedin.com" rel="noopener">LinkedIn, practice news</a></li>
+                <li><a href="journal.html">The journal, no feed required</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-cta" data-reveal>
+        <span class="eyebrow">New business</span>
+        <h2 class="serif-italic" style="font-size:var(--step-4)">Let's build something that ages well.</h2>
+        <p class="muted" style="margin:.8rem 0 1.4rem">We take on eight projects a year. Two slots remain for 2027.</p>
+        <a class="btn btn-solid" href="contact.html">Start a project <span class="arrow">&#8594;</span></a>
+      </div>
+      <div class="foot-grid">
+        <div class="foot-col foot-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2 14V5l6-3 6 3v9"/><path d="M6 14V9h4v5"/></svg>
+            </span>
+            Fieldform
+          </a>
+          <p>An architecture and interiors practice in Portland, Oregon. Founded 2011.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="studio.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Office</h4>
+          <ul>
+            <li>118 NW Flanders St, Suite 402</li>
+            <li>Portland, OR 97209</li>
+            <li>Mon to Fri, 9 to 5:30</li>
+            <li><a href="mailto:studio@fieldform.studio">studio@fieldform.studio</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Field Notes, monthly</h4>
+          <p class="small muted" style="margin-bottom:.8rem">One letter a month on buildings, materials, and process. No noise.</p>
+          <form data-newsletter aria-label="Newsletter signup">
+            <div class="newsletter">
+              <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+              <button class="btn btn-solid" type="submit">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <span>&copy; <span data-year>2026</span> Fieldform Studio. All rights reserved.</span>
+        <span>Licensed in Oregon and Washington</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
