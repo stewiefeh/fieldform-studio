@@ -1,0 +1,23 @@
+# Fieldform Studio
+
+> Fieldform Studio is an architecture and interiors practice in Portland,
+> Oregon, founded 2011. Note: this site is a fictional portfolio demo.
+
+## Pages
+
+- index.html: home overview, selected work, practice philosophy
+- projects.html: filterable grid of built projects
+- project-ashgrove.html: Ashgrove House case study (residential, Hudson Valley, 2025)
+- project-harborline.html: Harborline Pavilion case study (cultural, Portland ME, 2024)
+- studio.html: people, history, values, recognition
+- services.html: architecture, interiors, feasibility studies, master planning, FAQ
+- journal.html: Field Notes essays (concrete use, small rooms, hero stairs, feasibility)
+- contact.html: enquiry form and office details
+
+## Studio facts
+
+- 13-person practice, founded 2011
+- Services: architecture, interior architecture, feasibility studies, master planning
+- Engagement models: full service, design direction, advisory
+- Office: 118 NW Flanders St, Suite 402, Portland OR 97209
+- Takes on eight projects per year
